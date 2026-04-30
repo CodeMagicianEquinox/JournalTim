@@ -12,10 +12,8 @@ import SwiftData
 struct JournalTimApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                EntryListView()
-            }
+            EntryListView()
         }
-        .modelContainer(for:[JournalEntry.self])
+        .modelContainer(for: JournalEntry.self)
     }
 }
